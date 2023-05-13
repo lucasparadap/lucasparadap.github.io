@@ -1,0 +1,133 @@
+*
+{
+    margin: 0
+    padding: 0;
+    color: white;
+    text-underline-style: dashed-heavy;
+    text-underline-color: rgba(239,44,138,0.87);
+}
+body{
+    background-color: black;
+    font-family: Georgia;
+    font-weight: 500;
+}
+.tabs{
+    border: 1px solid white;
+    display: flex;
+}
+.tabs__sidebar
+{
+    width: 125px:
+    height: 200px;
+    flex-shrink: 30;
+    background-color: dark rgba(38, 36, 36, 0.15);
+    color: white;
+}
+.tabs__button
+{
+    display: block;
+    padding: 10px;
+    background-color: rgba(152, 152, 152, 0.96);
+    border: none;
+    width: 100%
+    outline: none;
+    cursor: pointer;
+}
+.tabs__button:active
+{
+    background: dark rgb(239, 44, 138);
+    display: block;
+
+}
+.tabs_button:not(:last-of-type)
+{
+    border-bottom: 1px solid gold;
+}
+.tabs__button:active
+{
+    font-weight: bold;
+    border-right: 4px solid ghostwhite;
+    background: rgb(239, 44, 138);
+    color: white;
+}
+.tabs__content
+{
+    padding: 15px;
+    font-size: 0.8rem;
+    display:block;
+}
+.tabs__content:active
+{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+button
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 75px;
+    color: black;
+    font-weight: 300;
+    text-transform: full-width;
+}
+button:active
+{
+    display: block;
+    background-color: rgb(239, 44, 138);
+    text-transform: uppercase;
+
+}
+.lg_image
+{
+    display: block;
+        margin-right: auto;
+        margin-left: auto;
+}
+.input-field
+{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px
+    outline: none;
+}
+.contact-box
+{
+    width: 500px
+    background-color: azure;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+form
+{
+    margin: 35px;
+}
+.input-field
+{
+    width: 400px;
+    height: 40px;
+    margin-top; 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777777;
+    border-radius: 14px;
+    outline: none;
+    color: black;
+}
+
+.textarea-field
+{
+    height: 150px;
+    padding-top: 10px;
+    color: black;
+}

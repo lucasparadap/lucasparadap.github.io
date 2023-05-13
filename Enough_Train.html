@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="text-align:center;"><span style='font-weight: bold;'> ENOUGH: Train </span></h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train: ENOUGH</title>
+    <img src="Enough_expanded.jpg" height="600" width = "600" class="lg_image">
+    <link rel="stylesheet" href="Enough_Train.css">
+</head>
+<body>
+    <h2> Upcoming Events: </h2>
+    <div class="tabs">
+        <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1"><strong>Event #1</strong></button>
+            <button class="tabs__button" data-for-tab="2"><strong>Event #2</strong></button>
+            <button class="tabs__button" data-for-tab="3"><strong>Event #3</strong></button>
+        </div>
+        <div class="tabs__content" data-tab="1">
+            <h2>Event 1</h2>
+            <p>
+                All the info you need to know about event 1! Our first event! Yay
+            </p>
+        </div>
+        <div class="tabs__content" data-tab="2">
+            <h2>Event 2</h2>
+            <p>
+                Our second event! Holy cow! Can you believe it?
+            </p>
+        </div>
+        <div class="tabs__content" data-tab="3">
+            <h2>Event 3</h2>
+            <p>
+                We are changing lives yeeehawww! Let's gooooooo!
+            </p>
+        </div>
+    </div><br><br>
+
+    <h2> Bring Us to You! </h2>
+    <p> ENOUGH is fully mobile and equipped to travel wherever it can to provide the necessary training to help
+    empower and equip as many queer individuals as possible. Interested in hosting an event? Contact us here!</p><br><br>
+
+    <h2 style="text-align:center"> <strong>Contact Us:</strong> </h2>
+    <div class="contact_box">
+        <form style="text-align:center">
+            <input type="text" class="input-field" placeholder="Full Name"> <br>
+            <input type="text" class="input-field" placeholder="Email Name"> <br>
+            <input type="text" class="input-field" placeholder="Phone (Optional)"> <br>
+            <input type="text" class="input-field" placeholder="Subject"> <br>
+            <textarea type="text" class="input-field textarea-field" placeholder="Message"></textarea><br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function submitForm(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "lucas.parada.32@gmail.com",
+                Password : "SBX380421dnc!",
+                To : 'lucas.parada.32@gmail.com',
+                From : document.getElementByID("email").value,
+                Subject : document.getElementByID("subject").value,
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+    <hr>
+    <h3 style="text-align:center;"> Support our GoFundMe! </h3>
+    <div style="text-align:center; color:black" class="buttonn" onclick="location.href='https://www.' +
+         'gofundme.com/f/oksleigh-charityfundraiser?utm_source=widget&utm_medium=referral&utm_campaign=p_cp+share-sheet'">
+        <button>Click Here</button>
+    </div>
+
+    <script>
+        function setupTabs() {
+            document.querySelectorALL(".tabs__button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const sideBar = button.parentElement;
+                    const tabsContainer = sideBar.parentElement;
+                    const tabsNumber = button.dataset.forTab;
+                    const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
+
+                    sideBar.querySelectorAll(".tabs__button").forEach(button => {
+                        button.classList.remove("tabs__button--active");
+                    });
+
+                    sideBar.querySelectorAll(".tabs__content").forEach(tab => {
+                        tab.classList.remove("tabs__content--active");
+                    });
+
+                    button.classList.add("tabs__button--active");
+                    tabToActivate.classList.add("tabs__content--active");
+                });
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setupTabs();
+        });
+    </script>
+</body>
+</html>

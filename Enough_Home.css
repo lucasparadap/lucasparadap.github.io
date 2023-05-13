@@ -1,0 +1,41 @@
+
+
+
+head {
+  padding-left: 40px;
+  width: 350px;
+}
+body
+{
+    color: ghostwhite;
+    background-color: black;
+    font-family: Georgia;
+    font-weight: 500;
+}
+.imgMain {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        }
+.buttonContainer
+{
+    color: dark rgb(239, 44, 138);
+}
+button
+{
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 200px;
+    height: 75px;
+    color: black;
+    font-weight: 300;
+    text-transform: full-width;
+}
+button:hover
+{
+   text-transform: uppercase;
+   color: dark rgb(239, 44, 138);
+}
+
+
+

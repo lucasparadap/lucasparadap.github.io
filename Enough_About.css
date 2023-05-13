@@ -1,0 +1,35 @@
+{
+    margin: 2px;
+    padding: 2px;
+}
+head
+{
+    padding-left: 30px;
+    font-max-size: large;
+
+}
+body
+{
+    background-color: black;
+    font-family: Georgia;
+    font-weight: 500;
+    color: white;
+    padding-left: 40px;
+}
+.par
+{
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+.headshot
+{
+    margin-left: 500px;
+    margin-right: auto;
+}
+.logo
+{
+    height:200px;
+    width: 200px;
+    float: right;
+}
